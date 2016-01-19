@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  body {
+    text-align: center;
+    padding-top: 300px;
+  }
+  .wrapper {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+
+  .macbook {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    height: 100px;
+    width: 180px;
+    border: 1px solid rgb(221, 221, 221);
+
+    border-radius: 5px;
+
+    position: relative;
+
+    margin-bottom: 100px;
+  }
+
+  .macbook .keyboard {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 50%;
+    background-color: rgb(66, 66, 66);
+    border-radius: 3px
+  }
+
+  .macbook .cap {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    position: absolute;
+    top: -10px;
+    left: auto;
+    width: 100%;
+
+    height: 10px;
+  }
+
+  .macbook .isaver {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 5px;
+    height: 100%;
+  }
+  .macbook .isaver .top,
+  .macbook .isaver .left,
+  .macbook .isaver .right {
+    position: absolute;
+    background-color: rgb(139, 139, 139);
+  }
+
+  .macbook .isaver .top {
+    top: 0;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+  }
+
+  .macbook .isaver .left {
+    top: 50%;
+    bottom: 10%;
+    left: 0;
+    right: 70%;
+  }
+
+  .macbook .isaver .right {
+    top: 50%;
+    bottom: 10%;
+    right: 0;
+    left: 70%;
+  }
+
+  .macbook .isaver.twisted {
+    transform: rotate(180deg);
+    top: 45%;
+  }
+
+  .macbook .isaver.twisted.wrapped .top {
+    top: 40%;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <h3>closed</h3>
+
+    <div class="macbook">
+      <div class="cap"></div>
+      <div class="keyboard"></div>
+      <div class="isaver">
+        <div class="top"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+
+    <h3>open</h3>
+
+    <div class="macbook">
+      <div class="cap"></div>
+      <div class="keyboard"></div>
+      <div class="isaver twisted">
+        <div class="top"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+
+    <h3>wrapped</h3>
+
+    <div class="macbook">
+      <div class="cap"></div>
+      <div class="keyboard"></div>
+      <div class="isaver twisted wrapped">
+        <div class="top"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
